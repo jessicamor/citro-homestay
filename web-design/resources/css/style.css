@@ -1,0 +1,233 @@
+/*
+ending navy blue #1b3371;
+honey glow #dea11c;
+*/
+
+/*---BASIC SETUP---*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body.body-style {
+    color: #404040;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    overflow-x: hidden; 
+    background: #efefef;
+}
+
+
+.main-title {
+    text-align: center;
+    color: #efefef;
+    margin-bottom: 20px;
+    font-size: 200%;
+    margin-top: 25%;
+    margin-bottom: 10%;
+}
+
+
+h2 {
+    font-size: 180%;
+    font-weight: 400;
+    text-align: center;
+   
+}
+
+.title {
+     color: #1b3371;
+}
+
+section {
+    padding: 5px 0;
+}
+
+
+
+/*-----BUTTONS----*/
+
+
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 3% 10%;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 90%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #7BCECC;
+    border: 1px solid #7BCECC;
+    color: #fff;
+    margin-right: 15px;
+}
+
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #7BCECC;
+}
+
+
+
+
+
+/*----SECTION 1: HOME------*/
+
+.section-main {
+    background-image: url(img/annie-spratt-271412-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+.branch-item {
+    position: relative;
+    text-align: center;
+    padding-bottom: 5%;
+    overflow-x: hidden;
+    margin-bottom: 2em;
+   
+}
+
+.branch-item a {
+     color: #efefef;
+}
+
+.img-zoom {
+    opacity: 0.5;
+    transform: scale(1);
+    transition: transform 0.9s, opacity 0.5s;
+
+}
+
+.img-zoom:hover {
+    opacity: 0.95;
+    transform: scale(1.12);
+}
+
+.customer {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+    
+}
+/*----SECTION 2: TESTIMONY------*/
+
+.section-testimony {
+    background: #f4f4f4;
+    color: #555;
+}
+
+.testimony-items {
+    
+    margin: 5%;
+    font-size: 90%;
+    padding: 2%;
+}
+
+blockquote {
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    padding: 2em 10px;
+}
+
+blockquote:before {
+    /*---
+    display: block;
+    content: "\201C";
+    font-size: 250%;
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    --*/
+    color: #1b3371;
+    font-size: 250%;
+    line-height: 0.5em;
+    margin-right: 0.27em;
+    content: "\201C";
+    float:left;
+    margin-top: 2px;
+
+}
+
+
+.testimony-items blockquote {
+    margin-bottom: 3px;
+    border-left: none;
+}
+
+ 
+cite {
+    margin: 0 0 20px 25px;
+}
+
+/*----SECTION 3: RULES------*/
+
+
+.section-rules {
+    color: #404040;
+    font-size: 90%;
+}
+
+ol {
+  margin-left: 40px;
+}
+
+
+/*----SECTION 4: Contact(Footer)------*/
+footer {
+    background: #1b3371;
+    color: #dea11c;
+    padding: 5px 0;
+    font-size: 90%;
+}
+
+.footer-title {
+    color: #dea11c;
+}
+
+footer .sub-title {
+    text-align: center;
+    width: 100%;
+}
+
+
+.contact-item {
+    width: 100%;
+    background: #344777;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    line-height: 150%;
+}
+
+.contact-item .fa-ul {
+    margin-left: 2em;
+}
+
+.contact-item h3 {
+    font-size: 130%;
+    margin-left: 0.3em;
+}
+
+.contact-item i {
+    font-size: 120%;
+}
+
+
+

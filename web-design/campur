@@ -1,0 +1,16 @@
+.branch-title {
+    position: absolute;
+    font-weight: 400;
+     width: 80%;
+    color: #1b3371;
+    background: #dea11c;
+    border-radius: 200px;
+    left: 10%;
+    top: 75%;
+    padding: 2px;
+    font-size: 95%;
+}
+
+.solo {
+    width: 70%;
+}
