@@ -1,6 +1,6 @@
 /*
-ending navy blue #1b3371;
-honey glow #dea11c;
+mazarine blue #273c75
+gold #e1b12c
 */
 
 /*---BASIC SETUP---*/
@@ -17,69 +17,129 @@ body.body-style {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     font-size: 20px;
-    overflow-x: hidden; 
-    background: #efefef;
+    overflow-x: hidden;
+    background: #fff;
 }
 
 
 .main-title {
     text-align: center;
-    color: #efefef;
+    color: #f4f4f4;
     margin-bottom: 20px;
-    font-size: 200%;
-    margin-top: 25%;
+    font-size: 160%;
+    margin-top: 20%;
     margin-bottom: 10%;
 }
 
 
+
 h2 {
-    font-size: 180%;
+    font-size: 140%;
     font-weight: 400;
     text-align: center;
-   
 }
 
+
 .title {
-     color: #1b3371;
+    color: #273c75;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+}
+
+
+.title:after {
+    display: block;
+    height: 2px;
+    background-color: #273c75;
+    content: "  ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+
 }
 
 section {
-    padding: 5px 0;
+    padding: 2em 0;
 }
 
 
+
+/*---HEADER----*/
+
+.navbar {
+    border: 1px solid transparent;
+}
+
+.navbar-custom {
+    background-color: rgba(39, 60, 117, 0.78);
+    color: #FEF8E6;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default:focus,
+.navbar-default:hover {
+    background-color: rgba(39, 60, 117, 0.96);
+    transition: background-color 0.4s;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #f4f4f4;
+    font-size: 200%;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+    color: #f4f4f4;
+}
+
+.navbar-default .navbar-nav > li > a:link {
+    color: #f4f4f4;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #e1b12c;
+}
 
 /*-----BUTTONS----*/
 
-
-
 .btn:link,
-.btn:visited,
-input[type=submit] {
+.btn:visited {
     display: inline-block;
-    padding: 3% 10%;
+    padding: 10px 20px;
     font-weight: 400;
     text-decoration: none;
-    font-size: 90%;
-    text-align: center;
-    margin-top: 10px;
+    border-radius: 200px;
+    border: 1px solid #e1b12c;
+    color: #f4f4f4;
+    font-size: 75%;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
-.btn-full:link,
-.btn-full:visited,
-input[type=submit] {
-    background-color: #7BCECC;
-    border: 1px solid #7BCECC;
-    color: #fff;
-    margin-right: 15px;
+.btn:hover,
+.btn:active {
+    background-color: #e1b12c;
+    color: #2e2e2e;
 }
 
-
-.btn-full:hover,
-.btn-full:active {
-    border: 1px solid #7BCECC;
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e1b12c;
+    color: #555;
 }
 
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #e1b12c;
+
+}
 
 
 
@@ -87,11 +147,12 @@ input[type=submit] {
 /*----SECTION 1: HOME------*/
 
 .section-main {
-    background-image: url(img/annie-spratt-271412-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/annie-spratt-271412-unsplash.jpg);
     background-size: cover;
+    height: 100%;
     background-attachment: fixed;
-    background-position: center;
-    
+    margin-bottom: auto;
+
 }
 
 .branch-item {
@@ -100,12 +161,8 @@ input[type=submit] {
     padding-bottom: 5%;
     overflow-x: hidden;
     margin-bottom: 2em;
-   
 }
 
-.branch-item a {
-     color: #efefef;
-}
 
 .img-zoom {
     opacity: 0.5;
@@ -124,18 +181,18 @@ input[type=submit] {
     border-radius: 50%;
     margin-right: 10px;
     vertical-align: middle;
-    
+
 }
+
 /*----SECTION 2: TESTIMONY------*/
 
 .section-testimony {
-    background: #f4f4f4;
+    background-color: #f4f4f4;
     color: #555;
 }
 
 .testimony-items {
-    
-    margin: 5%;
+    margin-left: 1.5em;
     font-size: 90%;
     padding: 2%;
 }
@@ -156,12 +213,12 @@ blockquote:before {
     top: 5px;
     left: -5px;
     --*/
-    color: #1b3371;
+    color: #273c75;
     font-size: 250%;
     line-height: 0.5em;
     margin-right: 0.27em;
     content: "\201C";
-    float:left;
+    float: left;
     margin-top: 2px;
 
 }
@@ -172,45 +229,70 @@ blockquote:before {
     border-left: none;
 }
 
- 
+
 cite {
     margin: 0 0 20px 25px;
 }
 
 /*----SECTION 3: RULES------*/
 
-
 .section-rules {
     color: #404040;
-    font-size: 90%;
 }
 
-ol {
-  margin-left: 40px;
+.rules-item {
+    margin-left: 2.5em;
+    font-size: 80%;
 }
+
+.rules-item {
+    list-style: none;
+    counter-reset: li;
+}
+
+.rules-item li {
+    margin-bottom: 8px;
+    counter-increment: li;
+}
+
+.rules-item li:before {
+    content: counter(li);
+    font-weight: 400;
+    color: #e1b12c;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1.5em;
+    margin-right: 0.5em;
+    text-align: right;
+    direction: rtl;
+}
+
+
 
 
 /*----SECTION 4: Contact(Footer)------*/
+
 footer {
-    background: #1b3371;
-    color: #dea11c;
+    background-image: linear-gradient(rgba(39, 60, 117, 0.67), rgba(39, 60, 117, 0.67)), url(img/annie-spratt-362691-unsplash.jpg);
+    color: #f4f4f4;
     padding: 5px 0;
     font-size: 90%;
+    background-size: cover;
 }
 
 .footer-title {
-    color: #dea11c;
+    color: #e1b12c;
 }
 
 footer .sub-title {
     text-align: center;
     width: 100%;
+    color: #f4f4f4;
 }
 
 
 .contact-item {
     width: 100%;
-    background: #344777;
     margin-bottom: 10px;
     padding: 5px 10px;
     line-height: 150%;
@@ -223,11 +305,93 @@ footer .sub-title {
 .contact-item h3 {
     font-size: 130%;
     margin-left: 0.3em;
+    color: #e1b12c;
 }
 
 .contact-item i {
     font-size: 120%;
+    color: #e1b12c;
 }
 
 
+/*----------CITRO HOMESTAY SOLO-----------*?
 
+/*SECTION FASILITAS*/
+
+.section-fasilitas {
+    background: #f4f4f4;
+    padding: 5%;
+    text-align: center;
+    font-size: 90%;
+}
+
+.section-fasilitas i {
+    margin-bottom: 10%;
+    font-size: 200%;
+    color: #273c75;
+}
+
+.section-fasilitas p {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.fasilitas-item {
+    margin-bottom: 5%;
+    border-bottom: 2px solid #e1b12c;
+    padding: 30px 10px;
+}
+
+.fasilitas-last {
+    margin-top: 2.5em;
+    margin-bottom: 5%;
+    border-bottom: none;
+}
+
+/*SECTION SEKITAR*/
+
+.section-sekitar {
+    font-size: 90%;
+    padding: 5%;
+}
+
+.section-sekitar ul {
+    margin-bottom: 10%;
+}
+
+.sekitar-item i {
+    font-size: 120%;
+    color: #e1b12c;
+}
+
+/*SECTION HARGA*/
+
+.section-harga {
+    background: #f4f4f4;
+    padding: 5%;
+    font-size: 90%;
+}
+
+
+.harga-item {
+    margin-top: 5%;
+    border: 1px solid #273c75;
+    padding: 30px 30px;
+}
+
+.harga-item i {
+    font-size: 120%;
+    color: #e1b12c;
+}
+
+.price {
+    font-weight: 200;
+    font-size: 140%;
+    color: #cf6d17;
+}
+
+.asterisk {
+    vertical-align: super;
+    font-size: 80%;
+    margin: 0 2px;
+}

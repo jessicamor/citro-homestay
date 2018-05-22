@@ -4,12 +4,14 @@
 <head>
     <meta name="viewport" content="width=device-width, initial scale=1.0">
     <meta charset="utf-8">
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <!--Boostrap: Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <title>Citro Homestay</title>
@@ -21,22 +23,22 @@
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" navbar-button>
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-                    <a class="navbar-brand" href="#">Citro Homestay</a>
+                    <a class="navbar-brand" href="index.html">Citro Homestay</a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Kata Pelanggan</a></li>
-                        <li><a href="#">Peraturan Menginap</a></li>
-                        <li><a href="#">Sering Ditanyakan &#40;FAQ&#41;</a></li>
-                        <li><a href="#">Kontak Kami</a></li>
+
+                        <li><a href="solo.html">Citro Homestay Solo</a></li>
+                        <li><a href="surabaya.html">Citro Homestay Surabaya</a></li>
+
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -50,12 +52,12 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="branch-item">
-                        <a class="btn btn-full" href="#"> &nbsp;&nbsp;&nbsp;&nbsp;Citro Homestay Solo&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a class="btn btn-full" href="solo.html"> &nbsp;&nbsp;&nbsp;&nbsp;Citro Homestay Solo&nbsp;&nbsp;&nbsp;&nbsp;</a>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="branch-item">
-                        <a class="btn btn-full" href="#">Citro Homestay Surabaya</a>
+                        <a class="btn btn-full" href="surabaya.html">Citro Homestay Surabaya</a>
                     </div>
                 </div>
             </div>
@@ -64,9 +66,7 @@
 
     <section class="section-testimony">
         <h2 class="title">Kata Pelanggan</h2>
-
         <div class="container">
-
             <div class="row">
                 <!-- Set up your HTML -->
                 <div class="owl-carousel owl-theme">
@@ -100,13 +100,15 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h2 class="title">Peraturan Menginap</h2>
-                    <ol>
-                        <li>Nullum delictum noella poena sine praevia lege poenali</li>
-                        <li>Nullum delictum noella poena sine praevia lege poenali</li>
-                        <li>Nullum delictum noella poena sine praevia lege poenali</li>
-                        <li>Nullum delictum noella poena sine praevia lege poenali</li>
-                        <li>Nullum delictum noella poena sine praevia lege poenali</li>
-                        <li>Nullum delictum noella poena sine praevia lege poenali</li>
+                    <ol class="rules-item">
+                        <li>Wajib memperlihatkan Tanda Identitas diri KTP / SIM. Tamu yang menginap lebih dari 2×24 jam wajib memberikan fotocopy KTP/SIM dan KK, guna laporan RT setempat.</li>
+                        <li>Tidak membuat gaduh atau hal-hal yang dapat menggangu tetangga.</li>
+                        <li>Tidak membawa pulang barang-barang inventaris di dalam homestay.</li>
+                        <li>Tidak membawa senjata, minuman keras dan obat-obat terlarang.</li>
+                        <li>Tidak membawa hewan peliharaan.</li>
+                        <li>Mematikan AC dan lampu ketika meninggalkan homestay.</li>
+                        <li>Menjaga kebersihan.</li>
+                        <li>Kehilangan bukan merupakan tanggung jawab pemilik homestay.</li>
                     </ol>
                 </div>
             </div>
