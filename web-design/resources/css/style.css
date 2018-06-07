@@ -1,4 +1,4 @@
-/*
+/*british palette
 mazarine blue #273c75
 gold #e1b12c
 */
@@ -14,11 +14,19 @@ gold #e1b12c
 html,
 body.body-style {
     color: #404040;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', 'Lato', sans-serif;
     font-weight: 300;
     font-size: 20px;
     overflow-x: hidden;
     background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+    color: #273c75;
 }
 
 
@@ -37,13 +45,12 @@ h2 {
     font-size: 140%;
     font-weight: 400;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 
 .title {
-    color: #273c75;
     margin-bottom: 5%;
-    text-transform: uppercase;
 }
 
 
@@ -59,7 +66,18 @@ h2 {
 }
 
 section {
-    padding: 2em 0;
+    padding: 1em 0;
+}
+
+h3 {
+    font-size: 120%;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 100%;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 
@@ -147,7 +165,7 @@ section {
 /*----SECTION 1: HOME------*/
 
 .section-main {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/annie-spratt-271412-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/annie-spratt-271412-unsplash-min.jpg);
     background-size: cover;
     height: 100%;
     background-attachment: fixed;
@@ -195,6 +213,7 @@ section {
     margin-left: 1.5em;
     font-size: 90%;
     padding: 2%;
+
 }
 
 blockquote {
@@ -214,7 +233,7 @@ blockquote:before {
     left: -5px;
     --*/
     color: #273c75;
-    font-size: 250%;
+    font-size: 270%;
     line-height: 0.5em;
     margin-right: 0.27em;
     content: "\201C";
@@ -237,28 +256,55 @@ cite {
 /*----SECTION 3: RULES------*/
 
 .section-rules {
-    color: #404040;
+    color: #555;
+    background-color: #fff;
+}
+
+.rules-time {
+    margin-top: 2em;
+    margin-left: 1em;
+    background-color: #e2ebf3;
+    margin-right: 1em;
+    padding: 2px;
+    margin-bottom: 2%;
+}
+
+.rules-time li {
+    margin: 1em 0.5em 1em 0;
+    font-size: 90%;
+
 }
 
 .rules-item {
-    margin-left: 2.5em;
-    font-size: 80%;
-}
-
-.rules-item {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 90%;
     list-style: none;
     counter-reset: li;
+     padding: 20px;
+    background-color: #e2ebf3;
+}
+
+.rules-item h4 {
+    text-transform: uppercase;
+    text-align: center; 
 }
 
 .rules-item li {
+    margin-left: 1em;
+    padding: 2px;
     margin-bottom: 8px;
     counter-increment: li;
 }
 
+
+
 .rules-item li:before {
     content: counter(li);
-    font-weight: 400;
-    color: #e1b12c;
+    font-size: 100%;
+    font-weight: 300;
+    color:  #273c75;
     display: inline-block;
     width: 1em;
     margin-left: -1.5em;
@@ -282,12 +328,15 @@ footer {
 
 .footer-title {
     color: #e1b12c;
+    text-transform: uppercase;
+
 }
 
 footer .sub-title {
     text-align: center;
     width: 100%;
     color: #f4f4f4;
+
 }
 
 
@@ -303,7 +352,6 @@ footer .sub-title {
 }
 
 .contact-item h3 {
-    font-size: 130%;
     margin-left: 0.3em;
     color: #e1b12c;
 }
@@ -353,7 +401,9 @@ footer .sub-title {
 .section-sekitar {
     font-size: 90%;
     padding: 5%;
+    color: #555;
 }
+
 
 .section-sekitar ul {
     margin-bottom: 10%;
@@ -367,15 +417,80 @@ footer .sub-title {
 /*SECTION HARGA*/
 
 .section-harga {
-    background: #f4f4f4;
-    padding: 5%;
+    background: #eef3f8;
     font-size: 90%;
+
+}
+
+.harga-item {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 2px 2px #345b80;
+}
+
+.harga-item div {
+    padding: 15px;
+    border-bottom: solid 1px #5d8fbd;
+}
+
+.harga-item div:first-child {
+    background-color: #75a0c7;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #f5f5f5;
+}
+
+.harga-item div:last-child {
+    border-bottom: none;
+    font-size: 90%;
+    background-color: #e2ebf3;
 }
 
 
-.harga-item {
+.asterisk {
+    vertical-align: super;
+    color: #fbc531;
+    font-size: 70%;
+    margin: 0 2px;
+}
+
+.asterisk-two {
+    color: #cf6d17;
+}
+
+.harga-number {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 200%;
+    color: #fbc531;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-family: 'Lato';
+    font-weight: 200;
+    font-size: 120%;
+    color: #cf6d17;
+}
+
+.harga-item i {
+    font-size: 100%;
+    color: #e1b12c;
+}
+
+.harga-item ul {
+    list-style: none;
+    margin-left: 1.5em;
+}
+
+
+
+/*
+
+ .harga-item {
+    color: #555;
     margin-top: 5%;
-    border: 1px solid #273c75;
     padding: 30px 30px;
 }
 
@@ -395,3 +510,5 @@ footer .sub-title {
     font-size: 80%;
     margin: 0 2px;
 }
+
+*/
