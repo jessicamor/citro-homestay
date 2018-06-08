@@ -88,6 +88,14 @@ h4 {
     border: 1px solid transparent;
 }
 
+.navbar-default .navbar-brand {
+    color: #e1b12c;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #fff;
+}
+
 .navbar-custom {
     background-color: rgba(39, 60, 117, 0.78);
     color: #FEF8E6;
@@ -138,13 +146,16 @@ h4 {
     border: 1px solid #e1b12c;
     color: #f4f4f4;
     font-size: 75%;
-    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s, transform 0.6s;
+
 }
 
 .btn:hover,
 .btn:active {
     background-color: #e1b12c;
     color: #2e2e2e;
+    transform: scale(1.2);
+    transition: transform 0.6s;
 }
 
 .btn-ghost:link,
@@ -156,6 +167,8 @@ h4 {
 .btn-ghost:hover,
 .btn-ghost:active {
     border: 1px solid #e1b12c;
+    transform: scale(1.15);
+    transition: transform 0.5s;
 
 }
 
@@ -177,30 +190,11 @@ h4 {
     position: relative;
     text-align: center;
     padding-bottom: 5%;
-    overflow-x: hidden;
+
     margin-bottom: 2em;
 }
 
 
-.img-zoom {
-    opacity: 0.5;
-    transform: scale(1);
-    transition: transform 0.9s, opacity 0.5s;
-
-}
-
-.img-zoom:hover {
-    opacity: 0.95;
-    transform: scale(1.12);
-}
-
-.customer {
-    height: 45px;
-    border-radius: 50%;
-    margin-right: 10px;
-    vertical-align: middle;
-
-}
 
 /*----SECTION 2: TESTIMONY------*/
 
@@ -253,11 +247,32 @@ cite {
     margin: 0 0 20px 25px;
 }
 
+/*--SECTION IMAGES----*/
+
+.section-images {
+    /* Prevent vertical gaps */
+    line-height: 0;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 0px;
+    -moz-column-count: 2;
+    -moz-column-gap: 0px;
+    column-count: 2;
+    column-gap: 0px;
+    padding: 0;
+}
+
+.section-images img {
+    /* Just in case there are inline attributes */
+    width: 100% !important;
+    height: auto !important;
+}
+
+
 /*----SECTION 3: RULES------*/
 
 .section-rules {
     color: #555;
-    background-color: #fff;
+    background-color: #bed2e4;
 }
 
 .rules-time {
@@ -282,13 +297,13 @@ cite {
     font-size: 90%;
     list-style: none;
     counter-reset: li;
-     padding: 20px;
+    padding: 20px;
     background-color: #e2ebf3;
 }
 
 .rules-item h4 {
     text-transform: uppercase;
-    text-align: center; 
+    text-align: center;
 }
 
 .rules-item li {
@@ -304,7 +319,7 @@ cite {
     content: counter(li);
     font-size: 100%;
     font-weight: 300;
-    color:  #273c75;
+    color: #273c75;
     display: inline-block;
     width: 1em;
     margin-left: -1.5em;
@@ -319,7 +334,7 @@ cite {
 /*----SECTION 4: Contact(Footer)------*/
 
 footer {
-    background-image: linear-gradient(rgba(39, 60, 117, 0.67), rgba(39, 60, 117, 0.67)), url(img/annie-spratt-362691-unsplash.jpg);
+    background-image: linear-gradient(rgba(39, 60, 117, 0.9), rgba(39, 60, 117, 0.63)), url(img/annie-spratt-362691-unsplash.jpg);
     color: #f4f4f4;
     padding: 5px 0;
     font-size: 90%;
@@ -336,9 +351,7 @@ footer .sub-title {
     text-align: center;
     width: 100%;
     color: #f4f4f4;
-
 }
-
 
 .contact-item {
     width: 100%;
@@ -362,9 +375,14 @@ footer .sub-title {
 }
 
 
-/*----------CITRO HOMESTAY SOLO-----------*?
+/*----------CITRO HOMESTAY SOLO-----------*/
 
 /*SECTION FASILITAS*/
+
+.section-main-solo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/citrohomestay-cover.jpg);
+    background-size: cover;
+}
 
 .section-fasilitas {
     background: #f4f4f4;
@@ -375,7 +393,7 @@ footer .sub-title {
 
 .section-fasilitas i {
     margin-bottom: 10%;
-    font-size: 200%;
+    font-size: 275%;
     color: #273c75;
 }
 
@@ -401,7 +419,8 @@ footer .sub-title {
 .section-sekitar {
     font-size: 90%;
     padding: 5%;
-    color: #555;
+    color: #333131;
+    background-color: #e5bc4a;
 }
 
 
@@ -411,31 +430,34 @@ footer .sub-title {
 
 .sekitar-item i {
     font-size: 120%;
-    color: #e1b12c;
+    color: #273c75;
 }
 
 /*SECTION HARGA*/
 
 .section-harga {
-    background: #eef3f8;
+    background: #d6e2ee;
     font-size: 90%;
+}
 
+.section-harga h4 {
+    color: #f5f5f5;
 }
 
 .harga-item {
     background-color: #fff;
     border-radius: 5px;
     width: 100%;
-    box-shadow: 0 2px 2px #345b80;
+    box-shadow: 0 2px 2px #2f5374;
 }
 
 .harga-item div {
     padding: 15px;
-    border-bottom: solid 1px #5d8fbd;
+    border-bottom: solid 1px #2f5374;
 }
 
 .harga-item div:first-child {
-    background-color: #75a0c7;
+    background-color: #487eb0;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     color: #f5f5f5;
@@ -485,30 +507,9 @@ footer .sub-title {
 }
 
 
+/*----------CITRO HOMESTAY SBY-----------*/
 
-/*
-
- .harga-item {
-    color: #555;
-    margin-top: 5%;
-    padding: 30px 30px;
+.section-main-sby {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/citrohomestay-cover.jpg);
+    background-size: cover;
 }
-
-.harga-item i {
-    font-size: 120%;
-    color: #e1b12c;
-}
-
-.price {
-    font-weight: 200;
-    font-size: 140%;
-    color: #cf6d17;
-}
-
-.asterisk {
-    vertical-align: super;
-    font-size: 80%;
-    margin: 0 2px;
-}
-
-*/
