@@ -23,3 +23,17 @@ $(document).ready(function () {
         }
     });
 });
+
+/* Map Solo */
+new GMaps({
+    div: '.map-solo',
+    lat: -7.576099,
+    lng: 110.8088019,
+});
+
+/* Map Surabaya */
+new GMaps({
+  div: '.map-surabaya',
+  lat: -7.3214023,
+  lng: 112.7179585
+});
