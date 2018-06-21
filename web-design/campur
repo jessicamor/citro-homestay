@@ -116,3 +116,47 @@ note:
 - numbers in rules should be styled
 - make full res image
 
+
+
+[Konten Citrohomestay Solo]
+
+Fasilitas :
+1. Kamar Tidur 5
+[2 KT ber AC + Bed + Lemari]
+[3 KT kipas angin + Lemari]
+
+2. Kamar Mandi 2
+3. Ruang keluarga + TV
+4. Dapur + Peralatan Dapur
+5. Balkon
+6. Tempat Parkir 
+7. Dispenser + Free Galon
+
+Foto
+Harga :
+Rp. 500.000/malam, Max 10 orang.
+
+Lebih dari 10 orang kena charge 50.000/org
+Longstay seminggu lebih murah👍
+
+Testimoni
+Atraksi sekitar
+
+Peraturan menginap :
+1. Minim DP sebelum hari-h menginap.
+2. Menjaga Kebersihan
+3. Tidak merusak fasilitas homestay.
+4. Tidak membawa pulang barang-barang inventaris di dalam homestay.
+5. Menggunakan air dan listrik secukupnya.
+6. Mematikan AC & lampu ketika meninggalkan homestay.
+
+
+magnific popup -- lightbox gallery
+click using a tag vs jquery. I think
+
+
+ $('.js--scroll-to-features').click(function () {
+        $('html, body').animate({
+            scrollTop: $('.js--section-features').offset().top
+        }, 1000);
+    });

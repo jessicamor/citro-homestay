@@ -22,9 +22,21 @@ $(document).ready(function () {
             }
         }
     });
+    
+      $('.js--scroll-to-main').click(function () {
+        $('html, body').animate({
+            scrollTop: $('.js--section-main').offset().top
+        }, 1000);
+    });
+    
+      
 });
 
- /*Map Solo*/
+
+  
+
+
+/*Map Solo*/
 /*
 new GMaps({
     div: '.map-solo',
@@ -47,7 +59,7 @@ new GMaps({
 // *
 
 
-
+/*
 // necessary variables
 var mapSolo, mapSurabaya;
 var infoWindowSolo, infoWindowSurabaya;
@@ -202,3 +214,5 @@ function createMarker(setMap, latlng, name, address1, address2, postalCode){
       infoWindow.open(map, marker);
    });
 }
+
+*/

@@ -94,6 +94,11 @@ h4 {
     color: #e1b12c;
 }
 
+.navbar-default .navbar-brand:link,
+.navbar-default .navbar-brand:visited {
+    color: #e1b12c;
+}
+
 .navbar-default .navbar-brand:hover {
     color: #fff;
 }
@@ -312,7 +317,7 @@ cite {
     margin-top: 1em;
     margin-left: 0.5em;
     margin-right: 0.5em;
-    font-size: 100%;
+    font-size: 95%;
     list-style: none;
     counter-reset: li;
     padding: 20px;
@@ -351,7 +356,7 @@ cite {
 
 /*----------CITRO HOMESTAY SOLO-----------*/
 
-/*SECTION FASILITAS*/
+
 
 .section-main-solo {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/citrohomestay-cover.jpg);
@@ -359,43 +364,45 @@ cite {
 }
 
 
+/*SECTION FASILITAS*/
+
+
 .section-fasilitas {
     background: #f4f4f4;
-    padding: 5%;
-    text-align: center;
-    font-size: 90%;
+    padding: 5% 15%;
+    font-size: 80%;
 }
+
+.section-fasilitas .row {
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    /*box-shadow: 0 1px 1px #777474;*/
+}
+
+    
 
 .section-fasilitas i {
-    margin-bottom: 10%;
-    font-size: 275%;
+    font-size: 250%;
     color: #273c75;
-}
-
-.section-fasilitas p {
-    text-align: center;
-    margin-bottom: 2px;
+    
 }
 
 .fasilitas-item {
-    margin-bottom: 5%;
-    border-bottom: 2px solid #e1b12c;
-    padding: 30px 10px;
+    padding: 5% 2%;
+    margin-left: 0.5em;
 }
 
-.fasilitas-last {
-    margin-top: 2.5em;
-    margin-bottom: 5%;
-    border-bottom: none;
-}
+
+
 
 /*SECTION SEKITAR*/
 
 .section-sekitar {
     font-size: 100%;
     padding: 5%;
-    color: #333131;
-    
+    color: #555;
+
 }
 
 .fa-ul.address {
@@ -404,9 +411,13 @@ cite {
 }
 
 .address-description {
-    color: #6f6969;
+    color: #867979;
 }
 
+
+.sekitar-sub {
+    color: #e1b12c;
+}
 
 .sekitar-item i {
     font-size: 100%;
@@ -418,7 +429,7 @@ cite {
 
 .sekitar-item-small {
     font-size: 80%;
-    color: #625c5c;
+    color: #867979;
 }
 
 
