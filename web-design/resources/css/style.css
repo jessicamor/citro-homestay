@@ -21,6 +21,11 @@ body.body-style {
     background: #fff;
 }
 
+/*to make the div in the middle of the page when screen size gets big*/
+.container {
+    width: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -368,29 +373,47 @@ cite {
 
 
 .section-fasilitas {
+    padding: 5%;
     background: #f4f4f4;
-    padding: 5% 15%;
     font-size: 80%;
 }
 
-.section-fasilitas .row {
-    background-color: #fff;
-    margin-bottom: 20px;
-    border: 1px solid #fff;
-    /*box-shadow: 0 1px 1px #777474;*/
+.section-fasilitas .row .col-xs-12 {
+    padding-right: 0;
 }
 
-    
+
 
 .section-fasilitas i {
     font-size: 250%;
     color: #273c75;
-    
+    text-align: left;
 }
 
+.section-fasilitas p {
+    text-align: left;
+}
+
+
 .fasilitas-item {
-    padding: 5% 2%;
+ padding: 5% 2%;
     margin-left: 0.5em;
+    margin-bottom: 20px;
+}
+
+.background-white{
+    background-color: #fff;
+    margin-bottom: 20px;
+    vertical-align: middle;
+}
+
+.inline-block-center {
+    text-align: center;
+}
+
+inline-block-center div {
+    display: inline-block;
+    text-align: left;
 }
 
 
@@ -417,6 +440,10 @@ cite {
 
 .sekitar-sub {
     color: #e1b12c;
+}
+
+.sekitar-item {
+    margin-bottom: 20px;
 }
 
 .sekitar-item i {
@@ -486,11 +513,14 @@ cite {
 .asterisk {
     vertical-align: super;
     color: #fbc531;
-    font-size: 70%;
+    font-size: 60%;
     margin: 0 2px;
 }
 
 .asterisk-two {
+    vertical-align: super;
+    color: #fbc531;
+    font-size: 60%;
     color: #cf6d17;
 }
 
