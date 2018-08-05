@@ -29,28 +29,12 @@ $(document).ready(function () {
         }, 1000);
     });
 
-
-
-    /*Map Solo*/
-    var soloCoordinate = {
-        latitude: -7.576099,
-        longitude: 110.8088019,
-        zoom: 19
-    }
-    showMap('.map-solo', soloCoordinate, 'Citro Homestay Solo')
-
-    /* Map Surabaya */
-    var surabayaCoordinate = {
-        latitude: -7.322795,
-        longitude: 112.714122,
-        zoom: 19
-    }
-    showMap('.map-sby', surabayaCoordinate, 'Citro Homestay Surabaya')
 });
 
 function showMap(divClass, coordinate, title) {
-    if ($(divClass).length) {
-        var map = new GMaps({
+    var element = $(divClass);
+    if (element.length) {
+        /*var map = new GMaps({
             div: divClass,
             lat: coordinate.latitude,
             lng: coordinate.longitude,
@@ -67,7 +51,27 @@ function showMap(divClass, coordinate, title) {
             infoWindow: {
                 content: '<p>' + title + '</p>'
             }
-        });
+        });*/
 
+        var map = new google.maps.Map(document.getElementById('map'), {zoom: coordinate.zoom, center: coordinate});
+        var marker = new google.maps.Marker({position: coordinate, map: map});
     }
+}
+
+function initMap(){
+    /*Map Solo*/
+    var soloCoordinate = {
+        lat: -7.576099,
+        lng: 110.8088019,
+        zoom: 19
+    }
+    showMap('.map-solo', soloCoordinate, 'Citro Homestay Solo')
+
+    /* Map Surabaya */
+    var surabayaCoordinate = {
+        lat: -7.322795,
+        lng: 112.714122,
+        zoom: 19
+    }
+    showMap('.map-sby', surabayaCoordinate, 'Citro Homestay Surabaya')
 }
