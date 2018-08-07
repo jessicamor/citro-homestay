@@ -213,12 +213,13 @@ h4 {
 .section-testimony {
     background-color: #f4f4f4;
     color: #555;
+     font-size: 100%;
 }
 
 .testimony-items {
-    margin-left: 1em;
-    font-size: 100%;
+    margin-left: 1.5em;
     padding: 2%;
+    margin-right: 1em;
 
 }
 
@@ -227,6 +228,7 @@ blockquote {
     line-height: 145%;
     position: relative;
     padding: 2em 10px;
+     font-size: 100%;
 }
 
 blockquote:before {
@@ -241,7 +243,7 @@ blockquote:before {
     color: #273c75;
     font-size: 270%;
     line-height: 0.5em;
-    margin-right: 0.27em;
+    margin-right: 0.1em;
     content: "\201C";
     float: left;
     margin-top: 2px;
