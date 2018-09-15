@@ -1,4 +1,3 @@
-Jenkinsfile (Declarative Pipeline)
 pipeline {
     agent any
 
@@ -9,6 +8,7 @@ pipeline {
                 mkdir /build
 		cd /build
 		git clone https://github.com/jessicamor/citro-homestay.git
+
             }
         }
         stage('Test') {
