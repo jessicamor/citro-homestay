@@ -7,8 +7,7 @@ pipeline {
 		rm -r /build
                 mkdir /build
 		cd /build
-		git clone https://github.com/jessicamor/citro-homestay.git
-
+		pwd
             }
         }
         stage('Test') {
