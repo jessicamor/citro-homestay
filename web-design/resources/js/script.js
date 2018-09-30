@@ -52,20 +52,18 @@ function copyToClipboard(idElement) {
     document.getSelection().addRange(selected);   // Restore the original selection
   }
 
-  ga('send', {
-      hitType: 'event',
-      eventCategory: 'button',
-      eventAction: 'click',
-      eventLabel: idElement
-    });
+  gtag('event', 'click', {
+    'event_category': 'button',
+    'event_label': idElement
+  });
+
 }
 
 function handleOutboundLinkClicks(event) {
-  ga('send', 'event', {
-    eventCategory: 'Outbound Link',
-    eventAction: 'click',
-    eventLabel: event.target.href,
-    transport: 'beacon'
+  gtag('event', 'click', {
+    'event_category': 'outbound',
+    'event_label': event.target.href,
+    'transport_type': 'beacon'
   });
 }
 
