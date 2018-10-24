@@ -32,10 +32,19 @@ $(document).ready(function () {
 });
 
 function copyToClipboard(idElement) {
+  var copyValue = '';
+  if(idElement === 'alamat-sby'){
+      copyValue = 'https://citrohomestay.com - Citrohomestay Surabaya - Jln. Jambangan Tama I No.10, Jambangan, Surabaya 60232 - Telp: 085645061151'
+  }
+  else if(idElement == 'alamat-solo'){
+      copyValue = 'https://citrohomestay.com - Citrohomestay Solo - Jln. Pasopati no 5, Tipes, Serengan, Solo - Telp: 081329758096'
+  } 
+  else{
+    copyValue = document.getElementById(idElement).innerHTML;
+  }
 
-  var copyText = document.getElementById(idElement);
   var el = document.createElement('textarea');  // Create a <textarea> element
-  el.value = copyText.innerHTML;                                 // Set its value to the string that you want copied
+  el.value = copyValue;                                 // Set its value to the string that you want copied
   el.setAttribute('readonly', '');                // Make it readonly to be tamper-proof
   el.style.position = 'absolute';                 
   el.style.left = '-9999px';                      // Move outside the screen to make it invisible
