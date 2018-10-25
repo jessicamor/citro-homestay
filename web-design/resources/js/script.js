@@ -34,10 +34,10 @@ $(document).ready(function () {
 function copyToClipboard(idElement) {
   var copyValue = '';
   if(idElement === 'alamat-sby'){
-      copyValue = 'https://citrohomestay.com - Citrohomestay Surabaya - Jln. Jambangan Tama I No.10, Jambangan, Surabaya 60232 - Telp: 085645061151'
+      copyValue = 'https://citrohomestay.com \nCitrohomestay Surabaya \nAlamat: Jln. Jambangan Tama I No.10, Jambangan, Surabaya 60232 \nTelp: 085645061151'
   }
   else if(idElement == 'alamat-solo'){
-      copyValue = 'https://citrohomestay.com - Citrohomestay Solo - Jln. Pasopati no 5, Tipes, Serengan, Solo - Telp: 081329758096'
+      copyValue = 'https://citrohomestay.com \nCitrohomestay Solo \nAlamat: Jln. Pasopati no 5, Tipes, Serengan, Solo \nTelp: 081329758096'
   } 
   else{
     copyValue = document.getElementById(idElement).innerHTML;
