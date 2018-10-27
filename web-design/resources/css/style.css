@@ -95,13 +95,11 @@ h4 {
     border: 1px solid transparent;
 }
 
-.navbar-default .navbar-brand {
-    color: #e1b12c;
-}
 
 .navbar-default .navbar-brand:link,
 .navbar-default .navbar-brand:visited {
     color: #e1b12c;
+    transition: color 0.3s;
 }
 
 .navbar-default .navbar-brand:hover {
@@ -111,6 +109,7 @@ h4 {
 .navbar-custom {
     background-color: rgba(39, 60, 117, 0.78);
     color: #FEF8E6;
+    transition: 0.3s;
 }
 
 .navbar-default .navbar-toggle {
@@ -125,7 +124,7 @@ h4 {
 .navbar-default:focus,
 .navbar-default:hover {
     background-color: rgba(39, 60, 117, 0.96);
-    transition: background-color 0.4s;
+    transition: background 0.3s;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -133,43 +132,68 @@ h4 {
     font-size: 200%;
 }
 
-
 .navbar-default .navbar-nav > li > a {
     color: #f4f4f4;
+    transition: 0.3s;
 }
 
+/*
 .navbar-default .navbar-nav > li > a:link {
     color: #f4f4f4;
 }
-
+*/
 .navbar-default .navbar-nav > li > a:hover {
     color: #e1b12c;
 }
 
 /*-----BUTTONS----*/
 
+
+.btn {
+    display: inline-block; 
+    text-decoration: none;
+    border-radius: 200px;
+}
+
+
+
 .btn-main:link,
 .btn-main:visited {
-    display: inline-block;
     padding: 10px 20px;
     font-weight: 400;
-    text-decoration: none;
     border: 1px solid #e1b12c;
-    border-radius: 200px;
-    color: #2f3640;
     font-size: 80%;
     background-color: #e1b12c;
-    transition: background-color 0.3s, border 0.3s, color 0.3s;
-
-
+    color: #4e4e4e;
+    transition: background 0.3s, border 0.3s, color 0.3s;
 }
 
 .btn-main:hover,
 .btn-main:active {
     background-color: transparent;
-    transition: transform 0.6s;
     color: #f4f4f4;
 }
+
+.btn-con {
+    font-size: 70%;
+    background-color: rgba(10, 40, 113, 0.66);
+    padding: 5px 8px;
+    color: #aaaaaa;
+    transition: color 0.3s;
+}
+
+.btn-con:link,
+.btn-con:visited {
+    
+} 
+
+
+.btn-con:hover,
+.btn-con:active {
+    color: #767676;
+    
+}
+
 
 
 
@@ -624,5 +648,16 @@ footer .sub-title {
 .copyright {
     font-size: 70%;
     text-align: center;
+}
 
+.link-direct:link,
+.link-direct:visited {
+    text-decoration: none;
+    color: #e1b12c;
+    transition: color 0.2s;
+}
+
+.link-direct:hover {
+    text-decoration: none;
+    color: #f6e8c1;
 }
