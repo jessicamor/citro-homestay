@@ -329,8 +329,21 @@ cite {
     text-align: left;
 }
 
+.section-baru {
+    text-align: left;
+    background-color: #e2ebf3;
+}
 
+.section-baru .container {
+    margin-left: 1em;
+    margin-right: 0.5em;
+}
 
+.section-solomini {
+    margin-left: 1em;
+    margin-right: 0.5em;
+    text-align: left;
+}
 
 /*----SECTION 3: RULES------*/
 
@@ -351,7 +364,6 @@ cite {
 .rules-time li {
     margin: 1em 0.5em 0.5em 0;
     font-size: 100%;
-
 }
 
 .rules-item {
