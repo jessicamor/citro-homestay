@@ -176,9 +176,9 @@ h4 {
 
 .btn-con {
     font-size: 70%;
-    background-color: rgba(10, 40, 113, 0.66);
+    background-color: #eccc76b6;
     padding: 5px 8px;
-    color: #aaaaaa;
+    color:#4e4e4e;
     transition: color 0.3s;
 }
 
@@ -681,4 +681,9 @@ footer .sub-title {
 
 .hidden{
     display: none;
+}
+
+.popup {
+    font-size: 100%;
+
 }
