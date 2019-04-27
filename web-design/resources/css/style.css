@@ -668,3 +668,17 @@ footer .sub-title {
     text-decoration: none;
     color: #f6e8c1;
 }
+
+/*------NOTIFICATION------*/
+.centered {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    z-index: 999;
+    margin-top: -50px;
+    margin-left: -100px;
+}
+
+.hidden{
+    display: none;
+}

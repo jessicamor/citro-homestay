@@ -61,6 +61,15 @@ function copyToClipboard(idElement) {
     document.getSelection().addRange(selected);   // Restore the original selection
   }
 
+  if( $('#notification-copy').length)         // use this if you are using id to check
+  {
+    $('#notification-copy').fadeIn();
+    $('#notification-copy').removeClass("hidden");
+    setTimeout(function() {
+      $('#notification-copy').fadeOut();
+    }, 1000);
+  }
+
   gtag('event', 'click', {
     'event_category': 'button',
     'event_label': idElement
