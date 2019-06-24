@@ -29,6 +29,9 @@ $(document).ready(function () {
         }, 1000);
     });
 
+    $('.map-link').click(function(e) {
+      handleOutboundLinkClicks(e);
+  });
 });
 
 function copyToClipboard(idElement) {
@@ -78,10 +81,14 @@ function copyToClipboard(idElement) {
 }
 
 function handleOutboundLinkClicks(event) {
+  event.preventDefault();
   gtag('event', 'click', {
     'event_category': 'outbound',
     'event_label': event.target.href,
-    'transport_type': 'beacon'
+    'transport_type': 'beacon',
+    'event_callback': function(){
+      window.open(event.target.href, '_blank');
+    }
   });
 }
 
