@@ -1,5 +1,26 @@
+let whatsappMessages = new Map([
+  ['wa-sby', 'https://citrohomestay.com \nCitro Homestay Surabaya saya berminat untuk menginap tanggal '],
+  ['wa-solo', 'https://citrohomestay.com \nCitro Homestay Solo saya berminat untuk menginap tanggal '],
+  ['wa-solo-mini', 'https://citrohomestay.com \nCitro Homestay Solo Mini saya berminat untuk menginap tanggal '],
+]);
+
 //owl carousel responsive
 $(document).ready(function () {
+  $('.phone-direct').click(function(event){
+    event.preventDefault();
+    var btn = $(this);
+    let key = btn.attr('data-whatsapp');
+    var finalURI = event.target.href + '?text=' + encodeURI(whatsappMessages.get(key));
+    gtag('event', 'click', {
+        'event_category': 'button',
+        'event_label': key,
+        'transport_type': 'beacon',
+        'event_callback': function(){
+          window.open(finalURI, '_blank');
+        }
+      });
+  });
+
     $(".owl-carousel").owlCarousel({
         items: 1,
         loop: true,

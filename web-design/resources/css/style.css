@@ -194,9 +194,23 @@ h4 {
     
 }
 
+.btn-full:link,
+.btn-full:visited {
+    background-color: #ff793f;
+    transition: background-color 0.3s, border 0.3s;
+}
 
+.btn-full:hover,
+.btn-full:active {
+    background-color: #cd6133;
+}
 
-
+.btn-purchase {
+    background-color: #eccc76b6;
+    height: 40px;
+    color: #767676; 
+    font-size: 110%;
+}
 
 
 /*----SECTION 1: HOME------*/
