@@ -4,6 +4,16 @@ let whatsappMessages = new Map([
   ['wa-solo-mini', 'https://citrohomestay.com \nCitro Homestay Solo Mini saya berminat untuk menginap tanggal '],
 ]);
 
+let copyContents = new Map([
+  ['alamat-sby', 'https://citrohomestay.com \nCitrohomestay Surabaya \nAlamat: Jln. Jambangan Tama I No.10, Jambangan, Surabaya 60232 \nTelp: 082131327064'],
+  ['alamat-sby-lokasi-sekitar', 'https://citrohomestay.com \nCitrohomestay Surabaya \nAlamat: Jln. Jambangan Tama I No.10, Jambangan, Surabaya 60232 \nTelp: 082131327064'],
+  ['alamat-solo', 'https://citrohomestay.com \nCitrohomestay Solo \nAlamat: Jln. Pasopati no 5, Tipes, Serengan, Solo \nTelp: 081329758096'],
+  ['alamat-solo-lokasi-sekitar', 'https://citrohomestay.com \nCitrohomestay Solo \nAlamat: Jln. Pasopati no 5, Tipes, Serengan, Solo \nTelp: 081329758096'],
+  ['telp-sby','082131327064'],
+  ['telp-solo','081329758096'],
+  ['telp-solo-mini','081329758096'],
+]);
+
 //owl carousel responsive
 $(document).ready(function () {
   $('.phone-direct').click(function(event){
@@ -21,51 +31,42 @@ $(document).ready(function () {
       });
   });
 
-    $(".owl-carousel").owlCarousel({
-        items: 1,
-        loop: true,
-        dots: true,
-        margin: 10,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            659: {
-                items: 2,
-            },
-            1000: {
-                items: 2,
-                loop: false
-            }
-        }
-    });
+  $(".owl-carousel").owlCarousel({
+      items: 1,
+      loop: true,
+      dots: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+      responsiveClass: true,
+      responsive: {
+          0: {
+              items: 1,
+          },
+          659: {
+              items: 2,
+          },
+          1000: {
+              items: 2,
+              loop: false
+          }
+      }
+  });
 
-    $('.js--scroll-to-main').click(function () {
-        $('html, body').animate({
-            scrollTop: $('.js--section-main').offset().top
-        }, 1000);
-    });
+  $('.js--scroll-to-main').click(function () {
+      $('html, body').animate({
+          scrollTop: $('.js--section-main').offset().top
+      }, 1000);
+  });
 
-    $('.map-link').click(function(e) {
-      handleOutboundLinkClicks(e);
+  $('.map-link').click(function(e) {
+    handleOutboundLinkClicks(e);
   });
 });
 
 function copyToClipboard(idElement) {
-  var copyValue = '';
-  if(idElement === 'alamat-sby' || idElement === 'alamat-sby-lokasi-sekitar'){
-      copyValue = 'https://citrohomestay.com \nCitrohomestay Surabaya \nAlamat: Jln. Jambangan Tama I No.10, Jambangan, Surabaya 60232 \nTelp: 085645061151'
-  }
-  else if(idElement == 'alamat-solo' || idElement == 'alamat-solo-lokasi-sekitar'){
-      copyValue = 'https://citrohomestay.com \nCitrohomestay Solo \nAlamat: Jln. Pasopati no 5, Tipes, Serengan, Solo \nTelp: 081329758096'
-  } 
-  else{
-    copyValue = document.getElementById(idElement).innerHTML;
-  }
+  var copyValue = copyContents.get(idElement);
 
   var el = document.createElement('textarea');  // Create a <textarea> element
   el.value = copyValue;                                 // Set its value to the string that you want copied
