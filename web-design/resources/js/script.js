@@ -7,8 +7,8 @@ let whatsappMessages = new Map([
 let copyContents = new Map([
   ['alamat-sby', 'https://citrohomestay.com \nCitrohomestay Surabaya \nAlamat: Jln. Jambangan Tama I No.10, Jambangan, Surabaya 60232 \nTelp: 082131327064'],
   ['alamat-sby-lokasi-sekitar', 'https://citrohomestay.com \nCitrohomestay Surabaya \nAlamat: Jln. Jambangan Tama I No.10, Jambangan, Surabaya 60232 \nTelp: 082131327064'],
-  ['alamat-solo', 'https://citrohomestay.com \nCitrohomestay Solo \nAlamat: Jln. Pasopati no 5, Tipes, Serengan, Solo \nTelp: 081329758096'],
-  ['alamat-solo-lokasi-sekitar', 'https://citrohomestay.com \nCitrohomestay Solo \nAlamat: Jln. Pasopati no 5, Tipes, Serengan, Solo \nTelp: 081329758096'],
+  ['alamat-solo', 'https://citrohomestay.com \nCitrohomestay Solo \nAlamat: Jln. Bhayangkara, Gang Pasopati no 5, Tipes, Serengan, Solo \nTelp: 081329758096'],
+  ['alamat-solo-lokasi-sekitar', 'https://citrohomestay.com \nCitrohomestay Solo \nAlamat: Jln. Bhayangkara, Gang Pasopati no 5, Tipes, Serengan, Solo \nTelp: 081329758096'],
   ['telp-sby','088996283734'],
   ['telp-solo','081329758096'],
   ['telp-solo-mini','081329758096'],
